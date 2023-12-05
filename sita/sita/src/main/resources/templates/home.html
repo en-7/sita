@@ -100,7 +100,7 @@
 <body>
     <nav th:replace="fragments/fragment :: navbar (${'/'})"></nav>
     <div sec:authorize="hasAnyAuthority('ROLE_[PEMBIMBING, PENGUJI]', 'ROLE_[PENGUJI, PEMBIMBING]', 'ROLE_[KOORDINATOR]', 'ROLE_[PEMBIMBING]', 'ROLE_[PENGUJI]', 'ROLE_[MAHASISWA]')" class="d-flex justify-content-center align-items-center">
-        <div class="m-4" style="align-self: start; width: fit-content;">
+        <div class="m-4" style="align-self: start; width: fit-content; width: 250px; padding-left: 30px;">
             <a id="timelineText" th:href="@{/timeline}">
                 <div class="d-flex justify-content-center" style="background-color: #fff;  border-radius: 10px;  margin-top: 14%;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="grey" class="bi bi-calendar4-week" viewBox="0 0 16 16" style="margin-left: 10px;">
